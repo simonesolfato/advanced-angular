@@ -1,0 +1,16 @@
+.toolbar {
+  font-size: 1em;
+  font-weight: 400;
+
+  .toolbar-title {
+    font-size: 1.25em;
+  }
+
+  .toolbar-logo {
+    outline: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0px 1em;
+    cursor: pointer;
+  }
+}

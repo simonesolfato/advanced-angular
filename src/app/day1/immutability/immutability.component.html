@@ -1,0 +1,55 @@
+<div fxLayout="column" fxLayoutAlign="center center" style="margin: 2em;">
+
+  <h1>Immutabilità</h1>
+
+  <div fxFlex fxLayout="row" fxLayoutAlign="center" style="width: 100%;">
+
+    <button mat-raised-button color="primary" type="button" (click)="setMovieMap()">
+      Immutable.Map
+    </button>
+
+    <button fxFlexOffset="5" mat-raised-button color="primary" type="button" (click)="setMovieFromJS()">
+      Immutable.fromJS
+    </button>
+
+    <button fxFlexOffset="5" mat-raised-button color="primary" type="button" (click)="setMovie(true)">
+      Imposta un film
+    </button>
+
+  </div>
+
+  <div fxFlexOffset="5" fxLayout="row" fxLayoutAlign="center" style="width: 100%;">
+
+    <button mat-raised-button color="primary" type="button" (click)="removeActor()">
+      Rimuove un artista
+    </button>
+
+    <button fxFlexOffset="5" mat-raised-button color="primary" type="button" (click)="changePG()">
+      Cambia PG
+    </button>
+
+    <button fxFlexOffset="5" mat-raised-button color="primary" type="button" (click)="deletePG()">
+      Cancella PG
+    </button>
+
+    <button fxFlexOffset="5" mat-raised-button color="primary" type="button" (click)="filterActors()">
+      Filtro attori
+    </button>
+
+  </div>
+
+  <div style="margin: 2em;">
+    {{ movieJSON }}
+  </div>
+
+  <div>
+    <button mat-raised-button color="accent" type="button" routerLink="/change-detection-push">
+      Indietro
+    </button>
+
+    <button fxFlexOffset="5" mat-raised-button color="primary" type="button" routerLink="/rxjs">
+      Avanti
+    </button>
+  </div>
+
+</div>

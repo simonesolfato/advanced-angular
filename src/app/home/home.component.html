@@ -1,0 +1,8 @@
+<div class="sections" fxLayout="row wrap" fxLayoutAlign="start center">
+
+  <button mat-raised-button color="primary" class="mat-elevation-z12" *ngFor="let section of sections" type="button"
+    [routerLink]="section.url">
+    {{ section.title }}
+  </button>
+
+</div>
